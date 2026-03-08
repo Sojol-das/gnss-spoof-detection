@@ -190,11 +190,11 @@ This indicates strong performance in distinguishing spoofed and genuine GNSS sig
 ## 9. Submission Format
 
 The final output file follows the required format:
+
 time,Spoofed,Confidence
 111402,0,0.000001
 111403,0,0.000001
 111404,0,0.000001
-
 
 Where:
 
@@ -220,6 +220,16 @@ submission_final.csv
 
 
 ## 11. Repository Structure
+
+gnss-spoof-detection
+│
+├── notebooks
+│ ├── exploration.ipynb
+│ └── final_pipeline.ipynb
+│
+├── submission_final.csv
+├── requirements.txt
+└── README.md
 gnss-spoof-detection
 │
 ├── notebooks
