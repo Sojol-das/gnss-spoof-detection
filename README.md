@@ -221,16 +221,6 @@ submission_final.csv
 
 ## 11. Repository Structure
 
-gnss-spoof-detection
-│
-├── notebooks
-│ ├── exploration.ipynb
-│ └── final_pipeline.ipynb
-│
-├── submission_final.csv
-├── requirements.txt
-└── README.md
-## 11. Repository Structure
 
 ```text
 gnss-spoof-detection
