@@ -230,15 +230,20 @@ gnss-spoof-detection
 ├── submission_final.csv
 ├── requirements.txt
 └── README.md
+## 11. Repository Structure
+
+```text
 gnss-spoof-detection
 │
 ├── notebooks
-│ ├── exploration.ipynb
-│ └── final_pipeline.ipynb
+│   ├── exploration.ipynb
+│   └── final_pipeline.ipynb
 │
 ├── submission_final.csv
 ├── requirements.txt
+├── .gitignore
 └── README.md
+```
 
 
 ## 12. Notes
