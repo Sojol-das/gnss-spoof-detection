@@ -189,18 +189,18 @@ This indicates strong performance in distinguishing spoofed and genuine GNSS sig
 
 ## 9. Submission Format
 
-The final output file follows the required format:
-
+```text
 time,Spoofed,Confidence
 111402,0,0.000001
 111403,0,0.000001
 111404,0,0.000001
+```
 
 Where:
 
-- **time** → Time step identifier
-- **Spoofed** → Predicted class (0 or 1)
-- **Confidence** → Prediction confidence value
+- **time** → Time step identifier  
+- **Spoofed** → Predicted class (0 = genuine signal, 1 = spoofed signal)  
+- **Confidence** → Model predicted probability
 
 
 ## 10. How to Reproduce the Project
