@@ -122,9 +122,11 @@ captures non-linear relationships between GNSS signal features.
 - Robust to feature scaling
 
 ### Model Parameters
+```text
 max_iter = 300
 learning_rate = 0.05
 max_depth = 8
+```
 
 
 ## 7. Training Methodology
@@ -159,7 +161,7 @@ To obtain a final spoof decision for each time step:
 2. Aggregate probabilities by time using mean probability
 3. Apply a spoof detection threshold
 
-Threshold used: 0.05
+**Threshold used: 0.05**
 
     
 ## Feature Importance
@@ -181,7 +183,7 @@ indicators of GNSS spoofing.
 
 Validation Performance:
 
-Weighted F1 Score ≈ 0.97
+**Weighted F1 Score ≈ 0.97**
 
 This indicates strong performance in distinguishing spoofed and genuine GNSS signals.
 
