@@ -249,44 +249,40 @@ Possible improvements for future work include:
 
 The machine learning pipeline used in this project follows the workflow below:
 
-Raw GNSS Dataset
-        │
-        ▼
-Data Preprocessing
-(Channel encoding, numeric conversion, missing value handling)
-        │
-        ▼
-Feature Engineering
-(corr_diff, CN0_mean_time, doppler_mean_time, pseudo_mean_time,
- CN0_std_time, doppler_std_time, pseudo_std_time)
-        │
-        ▼
-Train-Validation Split
-(Stratified sampling)
-        │
-        ▼
-Model Training
-(HistGradientBoostingClassifier with balanced sample weights)
-        │
-        ▼
-Validation
-(Weighted F1 Score evaluation)
-        │
-        ▼
-Test Prediction
-(Probability prediction per satellite channel)
-        │
-        ▼
-Aggregation by Time
-(Mean probability across channels)
-        │
-        ▼
-Spoof Detection
-(Threshold = 0.05)
-        │
-        ▼
-Submission File
-(time, Spoofed, Confidence)
+Raw GNSS Dataset  
+⬇  
+Data Preprocessing  
+(Channel encoding, numeric conversion, missing value handling)  
 
-This workflow summarizes the complete machine learning pipeline used to
-detect GNSS spoofing signals.
+⬇  
+Feature Engineering  
+(corr_diff, CN0_mean_time, doppler_mean_time, pseudo_mean_time,  
+CN0_std_time, doppler_std_time, pseudo_std_time)
+
+⬇  
+Train–Validation Split  
+(Stratified sampling)
+
+⬇  
+Model Training  
+(HistGradientBoostingClassifier with balanced sample weights)
+
+⬇  
+Validation  
+(Weighted F1 Score evaluation)
+
+⬇  
+Test Prediction  
+(Probability prediction per satellite channel)
+
+⬇  
+Aggregation by Time  
+(Mean probability across channels)
+
+⬇  
+Spoof Detection  
+(Threshold = 0.05)
+
+⬇  
+Submission File  
+(time, Spoofed, Confidence)
